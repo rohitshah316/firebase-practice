@@ -2,6 +2,7 @@ import React from 'react'
 import { signOut } from 'firebase/auth'
 import { auth } from '../firebase/firebase'
 import AddNote from '../components/AddNote'
+import NotesList from '../components/NotesList'
 const Dashboard = ({user}) => {
 
 
@@ -16,6 +17,10 @@ const Dashboard = ({user}) => {
 
         <hr />
         <AddNote user={user}/>
+
+        <hr />
+
+        <NotesList user={user}/>
     </div>
   )
 }
